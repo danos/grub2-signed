@@ -1,0 +1,5 @@
+# we intentionally ship the original changelog which is non-native
+grub-efi-amd64-signed: latest-debian-changelog-entry-changed-to-native
+
+grub-efi-amd64-signed: portable-executable-missing-security-features usr/lib/grub/x86_64-efi-signed/*.efi *
+grub-efi-amd64-signed: portable-executable-missing-security-features usr/lib/grub/x86_64-efi-signed/*.efi.signed *
