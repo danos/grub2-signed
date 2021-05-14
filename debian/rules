@@ -24,7 +24,11 @@ INSTALL_DIR := $(PACKAGE_DIR)/$(SIGNED_EFI_INSTALL_DIR)
 PACKAGE_VERSION := $(shell dpkg-query --showformat='$${Version}' --show $(UNSIGNED_PACKAGE_NAME))
 
 %:
+ifeq ($(filter noobs,$(DEB_BUILD_PROFILES)),)
 	dh $@ --with signobs
+else
+	dh $@
+endif
 
 # Build with the original's version, changelog and copyright, as it makes
 # more sense to have it match the unsigned binary
