@@ -1,3 +1,9 @@
+grub2-signed (2.3) unstable; urgency=medium
+
+  * Add noobs build profile (Closes: VRVDR-53810)
+
+ -- James Wheatley <jammy@att.com>  Mon, 17 May 2021 13:32:22 +0100
+
 grub2-signed (2.2) unstable; urgency=medium
 
   * DANOS Import master
